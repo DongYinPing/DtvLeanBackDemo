@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 设置菜单 -->
+    <string-array name="items_main_header">
+        <item>"快捷"</item>
+        <item>"应用"</item>
+        <item>"视频"</item>
+        <item>"图片"</item>
+        <item>"音乐"</item>
+        <item>"存储"</item>
+        <item>"收藏"</item>
+        <item>"设置"</item>
+    </string-array>
+
+</resources>

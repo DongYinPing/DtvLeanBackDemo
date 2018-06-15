@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TextAppearance.LeanbackBase" parent="android:TextAppearance.Holo">
+    </style>
+    <style name="TextAppearance.Leanback" parent="TextAppearance.LeanbackBase">
+        <!-- Any text appearance overrides go here. -->
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="TextAppearance.Leanback.Header" parent="TextAppearance.Leanback">
+        <item name="android:textSize">@dimen/lb_browse_header_text_size</item>
+        <item name="android:textColor">@color/lb_browse_header_color</item>
+    </style>
+
+    <style name="Widget.LeanbackBase" parent="android:Widget.Holo" />
+
+    <style name="Widget.Leanback" parent="Widget.LeanbackBase" />
+
+    <!-- RowsFragment -->
+    <style name="Widget.Leanback.Rows" >
+    </style>
+
+    <style name="Widget.Leanback.Rows.VerticalGridView" >
+        <item name="android:paddingBottom">?attr/browsePaddingBottom</item>
+        <item name="focusOutFront">true</item>
+        <item name="focusOutEnd">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <!-- row view -->
+    <style name="Widget.Leanback.Row" />
+
+    <style name="Widget.Leanback.Row.HorizontalGridView">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:paddingStart">?attr/browsePaddingStart</item>
+        <item name="android:paddingEnd">?attr/browsePaddingEnd</item>
+        <item name="android:paddingBottom">@dimen/lb_browse_item_vertical_spacing</item>
+        <item name="android:paddingTop">@dimen/lb_browse_item_vertical_spacing</item>
+        <item name="android:horizontalSpacing">@dimen/lb_browse_item_horizontal_spacing</item>
+        <item name="android:verticalSpacing">@dimen/lb_browse_item_vertical_spacing</item>
+        <item name="focusOutFront">true</item>
+    </style>
+    <style name="Widget.Leanback.Row.HeaderDock">
+        <item name="android:paddingStart">?attr/browsePaddingStart</item>
+    </style>
+
+    <style name="Widget.Leanback.Header" >
+        <item name="android:minHeight">@dimen/lb_browse_header_height</item>
+        <item name="android:minWidth">1dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Leanback.Header</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="TextAppearance.Leanback.Row.Header" parent="TextAppearance.Leanback.Header">
+    </style>
+    <style name="Widget.Leanback.Row.Header" parent="Widget.Leanback.Header">
+        <item name="android:textAppearance">@style/TextAppearance.Leanback.Row.Header</item>
+    </style>
+
+    <style name="TextAppearance.Leanback.Row.Header.Description" parent="TextAppearance.Leanback.Header">
+        <item name="android:textSize">@dimen/lb_browse_header_description_text_size</item>
+        <item name="android:textColor">@color/lb_browse_header_description_color</item>
+    </style>
+    <style name="Widget.Leanback.Row.Header.Description" parent="Widget.Leanback.Header">
+        <item name="android:textAppearance">@style/TextAppearance.Leanback.Row.Header.Description</item>
+    </style>
+
+</resources>
